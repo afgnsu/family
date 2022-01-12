@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_family_child_tree" model="ir.ui.view">
+            <field name="name">family.child.list</field>
+            <field name="model">family.child</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="sex"/>
+                    <field name="age"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_family_child_form" model="ir.ui.view">
+            <field name="name">family.child.form</field>
+            <field name="model">family.child</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="sex"/>
+                            <field name="age"/>
+                            <field name="parent_ids" widget="many2many_tags"/>
+                            <field name="pet_ids" widget="many2many_tags"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_family_child_view" model="ir.actions.act_window">
+            <field name="name">子女</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">family.child</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="family.menu_root"
+                  name="Family(介吾家)"
+                  sequence="200"/>
+        <menuitem id="family.menu_categ"
+                  name="成員"
+                  parent="family.menu_root"
+                  sequence="10"/>
+        <menuitem id="family.menu_parent_view"
+                  name="父母" parent="family.menu_categ"
+                  action="action_family_parent_view"
+                  sequence="10"/>
+        <menuitem id="family.menu_child_view"
+                  name="子女" parent="family.menu_categ"
+                  action="action_family_child_view"
+                  sequence="20"/>
+        <menuitem id="family.menu_pet_view"
+                  name="寵物" parent="family.menu_categ"
+                  action="action_family_pet_view"
+                  sequence="30"/>
+    </data>
+</odoo>
