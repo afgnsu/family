@@ -11,7 +11,7 @@
                     <field name="name"/>
                     <field name="sex"/>
                     <field name="age"/>
-                    <field name="master"/>
+                    <field name="master" widget="pad"/>
                 </tree>
             </field>
         </record>

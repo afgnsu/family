@@ -20,6 +20,7 @@
     # only loaded in demonstration mode
     # 'demo': ['demo/demo.xml'],   #範例
     'test': [],
+    'application': True,  # 應用程式
     'installable': True,  # 允許安裝
     'auto_install': True,  # 是否自動安裝
     # 'post_init_hook': 'post_init',
